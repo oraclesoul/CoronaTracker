@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country:Covid19stats</title>
+        <script src="https://kit.fontawesome.com/2289f609a4.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="world.css">
+</head>
+<body>
+
+    <nav>
+       
+        <span> 
+           <ul> 
+
+            <li class="backbtn">
+                <button onclick="window.history.back()" class="backbutton"><i class="fas fa-arrow-left"></i>
+                </button>
+            </li>
+            <li>
+                <a href="../home/home.html">Home</a>
+            </li>
+               <li>
+                 <a href="../total/total.html">Overview</a>
+               </li>
+               <li>
+                   <a href="../world/world.html">World wide</a>
+               </li>
+             <li>
+                 <a href="../india/indian.html">India</a>
+             </li>
+             <li>
+                <a href="../info/info.html">Info</a>
+            </li>
+          
+           </ul>
+        </span>
+     
+      </nav>
+    <h1 id="top">World Wide Stats</h1>
+   <div class="geo">
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+   </div>
+
+    <div>
+         <h1 id="totalCountries"></h1>
+        <div class="stats">
+            <table>
+                <thead>
+                    <th>Country</th>
+                    <th>Total Cases</th>
+                    <th>Deaths</th>
+                    <th>Recovered</th>
+                </thead>
+
+            </table>
+        </div>
+
+    </div>
+
+
+    <a href="#top"  style="position: fixed; bottom: 20px; right: 30px;" title="top" ><i class="fas fa-arrow-up"></i></a>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="world.js"></script>
+</body>
+</html>

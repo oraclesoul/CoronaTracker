@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2289f609a4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
+            background-image: linear-gradient(white);
+            font-family: 'Baloo Bhaina 2', cursive;
+
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+
+        div {
+            width: fit-content;
+            margin: auto;
+        }
+
+        .main {
+            padding-top: 80px;
+            margin-top: 1px;
+        }
+
+        p {
+            font-size: 5rem;
+            display: inline-block;
+            margin: 30px 80px;
+        }
+
+        .block {
+            margin-top: 40px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 10px;
+            color: blue;
+            box-shadow: 2px 2px 4px rgb(104, 23, 23);
+            /*  */
+            position: relative;
+            transition: ease-in .8;
+            z-index: 2;
+
+        }
+
+        .block::before {
+            content: '';
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            border-radius: 10px;
+            height: 100%;
+            z-index: -1;
+            width: 0px;
+            background: blue;
+            transition: .5s ease-in;
+        }
+
+        .block:hover::before {
+            width: 100%;
+        }
+
+        .block a:hover {
+            color: white;
+        }
+
+        h1 {
+            display: block;
+            position: relative;
+            bottom: 50px;
+            width: 100%;
+            color: white;
+        }
+
+        .block:hover a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="../images/topborder.svg" style="position: absolute; top: -55px; z-index: -50;" alt="">
+
+    <div class="main">
+
+        <h1>CORONA (COVID-19)</h1>
+
+        <div>
+            <div class="block">
+                <a href="../total/total.html">
+                    <p><i class="fas fa-viruses"></i></p>
+                    <h3>Overview</h3>
+                </a>
+
+            </div>
+            <div class="block">
+                <a href="../world/world.html">
+                    <p><i class="fas fa-globe-asia"></i></p>
+                    <h3>World Wide</h3>
+                </a>
+            </div>
+            <div class="block">
+                <a href="../india/indian.html">
+                    <p><i class="far fa-flag"></i></p>
+                    <h3>India</h3>
+                </a>
+            </div class="block">
+            <div class="block">
+                <a href="../info/info.html">
+                    <p><i class="fas fa-hands-helping"></i></p>
+                    <h3>Info</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+body{
+    box-sizing: border-box;
+    text-align: center;
+    padding: 100px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.backbtn{
+    float: left;
+}
+.backbutton{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px 10px;
+    border: none;
+    color: blue;
+    background: transparent;
+}
+.backbutton:hover{
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 5px #c7c0c0;
+    border-radius: 10px;
+}
+li{
+    display: inline-block;
+}
+nav a{
+    font-family: 'Baloo Bhaina 2', cursive;
+    color:blue;
+    text-decoration: none;
+    font-weight:500;
+    width: 160px;
+    display: inline-block;
+    /* padding: 10px 5px; */
+    /* margin: 10px; */
+    /* changes */
+    position: relative;
+}
+
+nav a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 0;
+    width: 100%;
+    background-color: blue;
+    transition: .5s ease;
+}
+nav a:hover{
+    color: white;
+}
+nav a:hover::before{
+    z-index: -1;
+    height: 100%;
+    
+    box-shadow: 2px 2px 5px #c7c0c0;
+    border-radius: 10px;
+}
+
+h1{
+    color: blue;
+}
+nav{
+    
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    position: fixed;
+    
+    left: 0px;
+    top: 0px;
+    color: blue;
+    box-shadow: 2px 2px 2px #e7e7e7;
+}
+
+/* -------*/
+.chart{
+    width: fit-content;
+    margin: auto;
+    border: blue solid 2px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.stats{
+    
+    width: fit-content;
+    margin: auto;
+}
+tr:hover{
+    z-index: 1.1;
+    border:none;
+    position: relative;
+    bottom: 55px;
+    box-shadow: 10px 10px 3px #c7c0c0;
+    color: white;
+     background-color: blue;
+    
+}
+tr,th,td{
+    /* margin: 10px; */
+    padding: 20px;
+    border-top:2px ;
+    border-bottom: 2px solid #e7e7e7;
+}

@@ -1,0 +1,123 @@
+body{
+    box-sizing: border-box;
+    text-align: center;
+    padding: 55px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.backbtn{
+    float: left;
+}
+.backbutton{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px 10px;
+    border: none;
+    color: blue;
+    background: transparent;
+}
+.backbutton:hover{
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 5px #c7c0c0;
+    border-radius: 10px;
+}
+li{
+    display: inline-block;
+}
+nav a{
+    font-family: 'Baloo Bhaina 2', cursive;
+    color:blue;
+    text-decoration: none;
+    font-weight:500;
+    width: 160px;
+    display: inline-block;
+    /* padding: 10px 5px; */
+    /* margin: 10px; */
+    /* changes */
+    position: relative;
+}
+
+nav a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 0;
+    width: 100%;
+    background-color: blue;
+    transition: .5s ease;
+}
+nav a:hover{
+    color: white;
+}
+nav a:hover::before{
+    z-index: -1;
+    height: 100%;
+    
+    box-shadow: 2px 2px 5px #c7c0c0;
+    border-radius: 10px;
+}
+
+h1{
+    color: blue;
+}
+nav{
+    
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    position: fixed;
+    
+    left: 0px;
+    top: 0px;
+    color: blue;
+    box-shadow: 2px 2px 2px #e7e7e7;
+}
+
+/* -------*/
+.main{
+    padding: 30px;
+}
+
+.stat-div{
+    width: fit-content;
+    margin: auto;
+}
+
+table{
+    border:2px solid #e7e7e7;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #e7e7e7;
+    padding: 20px;
+}
+
+th{
+    font-size: large;
+    border-bottom: 2px solid #e7e7e7;
+    box-shadow: 0px 2px 1px blue;
+    border-collapse: collapse;
+}
+td{
+    font-size: large;
+}
+th,tr,td{
+  color: blue   ;
+  padding: 60px;
+  margin: 60px;
+  /* border: blue 2px solid; */
+  border-radius:10px ;
+
+}
+td:hover{
+    z-index: 11;
+    border:none;
+    position: relative;
+    left: 5px;
+    box-shadow: 10px 10px 3px #c7c0c0;
+    color: white;
+    background-color: blue;
+    
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="total.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2289f609a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>    
+    <nav>
+
+        <span>
+            <ul>
+                <li class="backbtn">
+                    <button onclick="window.history.back()" class="backbutton"><i class="fas fa-arrow-left"></i>
+                    </button>
+                </li>
+                <li>
+                    <a href="../home/home.html">Home</a>
+                </li>
+                <li>
+                    <a href="../total/total.html">Overview</a>
+                </li>
+               
+                <li>
+                    <a href="../india/indian.html">India</a>
+                </li>
+                <li>
+                    <a href="../world/world.html">World wide</a>
+                </li>
+                <li>
+                    <a href="../info/info.html">Info</a>
+                </li>
+            </ul>
+        </span>
+
+    </nav>
+    <div class="main">
+
+        <h1>Covid-19</h1>
+
+        <div class="stat-div">
+            <table>
+                <tr>
+                    <th>Total Cases</th>
+                    <th>Deaths</th>
+                    <th>Recovered</th>
+                </tr>
+                <tr>
+                    <td id="totalCases"></td>
+                    <td id="totalDeaths"></td>
+                    <td id="totalRecovered"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <script src="total.js"></script>
+</body>
+
+</html>
